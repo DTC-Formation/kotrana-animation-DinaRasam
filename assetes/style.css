@@ -74,7 +74,7 @@ body {
     height: 20px;
     opacity: 0;
     /* border: solid 10px  #B4B8AB; */
-    background-color:#B4B8AB; 
+    background-color:white; 
     border-radius: 50%;
     justify-content: center;
     margin-top: 40px;
@@ -99,26 +99,30 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: solid 5px brown;
-
+    border-top: solid 5px brown;
+    border-bottom: solid 5px rgb(6, 82, 245);
+    border-left: solid 5px orange;
+    border-right: solid 5px yellow;
     animation-name: rotation;
-    animation-duration: 10s; 
+    animation-duration: 1s; 
     animation-iteration-count: infinite;
+    margin:auto;
+    top: 25%;
 }
 @keyframes rotation {
-    /* from {
-           
+    from {
+           rotate: 0deg;
     }
     to {
-
-    } */
-    0% {
+           rotate: 360deg;
+    }
+    /* 0% {
         border: solid 5px gold;
     
     }
     25% {
         border: solid 5px black;
-    }
+    } */
 }
 
 
@@ -134,23 +138,48 @@ body {
     
 }
 .animation3 {
-    width: 50px;
-    height: 20px;
-    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%; */
     background-color: #B4B8AB;
     animation-name: animation3;
     animation-duration: 1s; 
     animation-iteration-count: infinite;
     
+    
 }
 
 @keyframes animation3 {
-    from {
+    0% {
         
-        transform: rotate(0deg) translateX(0px 0px);
+        transform: rotate(0deg) ;
     }
-    to {
+    100% {
     
-        transform: rotate(360deg) translateX(490px 0px);
+        transform: rotate(360deg) ;
+    }
+}
+
+.anim4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   
+    border-bottom: solid 5px rgb(6, 82, 245);
+   
+    animation-name: rotation2;
+    animation-duration: 10s; 
+    animation-iteration-count: infinite;
+    margin:auto;
+    top: 25%;
+}
+@keyframes rotation2 {
+    0% {
+           rotate: 0deg;
+           background-color: aliceblue;
+    }
+    50% {
+           rotate: 90deg;
+           background-color: aqua;
     }
 }
