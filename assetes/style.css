@@ -3,12 +3,25 @@ body {
     overflow-x: hidden;
 }
 .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #284B63;
+    width: 100wh;
+    height: 100vh;
+}
+.partie1 {
+    height: 40%;
+    width: 100%;
+}
+.partie2 {
+    left: 100px;
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     background-color: #284B63;
+   
     
 }
 .section1 {
