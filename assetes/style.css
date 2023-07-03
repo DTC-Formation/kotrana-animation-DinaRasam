@@ -323,3 +323,39 @@ body {
                 color: #B4B8AB;
     }
 }
+
+.boribory {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background-color: #153243;
+    border: solid 5px white;
+    border-radius: 50%;
+     
+}
+.bory1 {
+    color: #B4B8AB;
+    margin-top: 35%;
+    animation-delay: 5s;
+    animation: bory  4s infinite;
+}
+
+@keyframes bory {
+    
+    /* 0%,20% {
+        border: solid 5px white;
+    }
+    20%,40% {
+        border: solid 5px red;
+    } */
+    from {
+        rotate: 0deg;
+        opacity: 0.1;
+       }
+       to {
+        rotate: 360deg;
+        color: rgb(24, 23, 23);
+        opacity: 1;
+       }
+
+}
