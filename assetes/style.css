@@ -113,8 +113,8 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border-top: solid 5px brown;
-    border-bottom: solid 5px rgb(6, 82, 245); 
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px transparent; 
     border-left: solid 5px orange;
     border-right: solid 5px yellow; 
     animation-name: rotation;
@@ -336,8 +336,8 @@ body {
 .bory1 {
     color: #B4B8AB;
     margin-top: 35%;
-    animation-delay: 5s;
-    animation: bory  4s infinite;
+    /* animation-delay: 5s; */
+    animation: bory  5s infinite;
 }
 
 @keyframes bory {
@@ -359,3 +359,33 @@ body {
        }
 
 }
+.animationnotopBouton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-top: solid 5px red;
+    border-bottom: solid 5px green; 
+    border-left: solid 5px orange;
+    border-right: solid 5px yellow; 
+    animation-name: rotation;
+    animation-duration: 0.5s; 
+    animation-iteration-count: infinite;
+    margin:auto;
+    top: 25%;
+}
+@keyframes rotation {
+    from {
+           rotate: 0deg;
+    }
+    to {
+           rotate: 360deg;
+    }
+    /* 0% {
+        border: solid 5px gold;
+    
+    }
+    25% {
+        border: solid 5px black;
+    } */
+}
+
